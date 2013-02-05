@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Technicolor Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+
+        .dl-horizontal dt{
+            width:  45% !important;
+            text-align: right;
+        }
+
+        .dl-horizontal dd{
+            margin-left: 55%;
+            text-align: left;
+        }
+
+            /* Jumbotrons
+    -------------------------------------------------- */
+
+            /* Base class
+            ------------------------- */
+        .jumbotron {
+            position: relative;
+            padding: 40px 0;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+            background: rgb(4,156,219); /* Old browsers */
+            background: -moz-linear-gradient(left,  rgba(4,156,219,1) 0%, rgba(0,100,205,1) 13%, rgba(70,165,70,1) 25%, rgba(157,38,29,1) 38%, rgba(255,196,13,1) 50%, rgba(248,148,6,1) 62%, rgba(195,50,95,1) 75%, rgba(122,67,182,1) 88%, rgba(4,156,219,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(4,156,219,1)), color-stop(13%,rgba(0,100,205,1)), color-stop(25%,rgba(70,165,70,1)), color-stop(38%,rgba(157,38,29,1)), color-stop(50%,rgba(255,196,13,1)), color-stop(62%,rgba(248,148,6,1)), color-stop(75%,rgba(195,50,95,1)), color-stop(88%,rgba(122,67,182,1)), color-stop(100%,rgba(4,156,219,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left,  rgba(4,156,219,1) 0%,rgba(0,100,205,1) 13%,rgba(70,165,70,1) 25%,rgba(157,38,29,1) 38%,rgba(255,196,13,1) 50%,rgba(248,148,6,1) 62%,rgba(195,50,95,1) 75%,rgba(122,67,182,1) 88%,rgba(4,156,219,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left,  rgba(4,156,219,1) 0%,rgba(0,100,205,1) 13%,rgba(70,165,70,1) 25%,rgba(157,38,29,1) 38%,rgba(255,196,13,1) 50%,rgba(248,148,6,1) 62%,rgba(195,50,95,1) 75%,rgba(122,67,182,1) 88%,rgba(4,156,219,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left,  rgba(4,156,219,1) 0%,rgba(0,100,205,1) 13%,rgba(70,165,70,1) 25%,rgba(157,38,29,1) 38%,rgba(255,196,13,1) 50%,rgba(248,148,6,1) 62%,rgba(195,50,95,1) 75%,rgba(122,67,182,1) 88%,rgba(4,156,219,1) 100%); /* IE10+ */
+            background: linear-gradient(to right,  rgba(4,156,219,1) 0%,rgba(0,100,205,1) 13%,rgba(70,165,70,1) 25%,rgba(157,38,29,1) 38%,rgba(255,196,13,1) 50%,rgba(248,148,6,1) 62%,rgba(195,50,95,1) 75%,rgba(122,67,182,1) 88%,rgba(4,156,219,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#049cdb', endColorstr='#049cdb',GradientType=1 ); /* IE6-9 */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+            -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+            box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+        }
+        .jumbotron h1 {
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1;
+        }
+        .jumbotron p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.25;
+            margin-bottom: 30px;
+        }
+
+            /* Link styles (used on .masthead-links as well) */
+        .jumbotron a {
+            color: #fff;
+            color: rgba(255,255,255,.5);
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        .jumbotron a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,.25);
+        }
+
+            /* Download button */
+        .masthead .btn {
+            padding: 19px 24px;
+            font-size: 24px;
+            font-weight: 200;
+            color: #fff; /* redeclare to override the `.jumbotron a` */
+            border: 0;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+            -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+        }
+        .masthead .btn:hover {
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+            -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        }
+        .masthead .btn:active {
+            -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+            -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+        }
+
+        body {
+            background: radial-gradient(circle, #fff 0%, #ededed 85%) no-repeat;
+            background: -webkit-radial-gradient(circle, #fff 0%, #ededed 85%) no-repeat;
+            height: 100%;
+            display: table;
+            width: 100%
+        }
+
+            /* Pattern overlay
+            ------------------------- */
+        .jumbotron .container {
+            position: relative;
+            z-index: 2;
+        }
+        .jumbotron:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: .4;
+        }
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
+            .jumbotron:after {
+                background-size: 150px 150px;
+            }
+
+        }
+
+
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+
+<body class="bg-grayLighter">
+
+    <div class="jumbotron ">
+        <h1>Technicolor Bootstrap</h1>
+        <div class="container">
+             <p class="lead">99% Hipster, 1% Whatever.</p>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top:40px;">
+        <div class="hero-unit bg-pink grayLighter">
+            <h2>Say no more, my friend!</h2>
+            <p class="lead">I know exactly what you mean.</p>
+            <p class="lead">I bet not even five minutes ago you probably realized you needed a website done sometime before yesterday,
+                and you decided to use Bootstrap to make it look like you had been working a lot longer than you had been,
+                and suddenly you were all like</p>
+            <p class="lead">  <em>"Why can't that hero-unit have a pink background?"</em></p>
+         </div>
+
+
+
+    <div class="row-fluid">
+        <div class="span4 well well-large bg-orange white">
+            <h2>Boot Colorful</h2>
+            <p>Using the colors is easy. Add a color and a bg-color to the class attribute of a well or hero-unit, and watch it pop! </p>
+
+                <small><code>&lt;div class="<span class="pink">well bg-orange white</span>"&gt;</code></small>
+
+        </div>
+        <div class="span4 well well-large bg-blue grayLighter">
+            <h2 class="blueDark">Boot Colorfuller</h2>
+            <p class="yellow">If you want, you can even apply different color classes to most visible elements, but be careful you don't go overboard. </p>
+
+                <small><code><<span class="blue">h2</span> "<span class="pink">class="blueDark"</span>></code>  </small>        </div>
+
+        <div class="span4 well well-large bg-purple pink">
+            <h2>Boot Colorstupid</h2>
+            <p><span class="blue">Don't be about <em>could</em> when  <span class="red">it's better to worry about <em class="orange">should</em>.</span>
+                <span class="pink">It's easier to put the effup</span> <span class="yellow">in colorzaster</span> than you think.</span></p>
+
+                <small><code class="grayLighter bg-grayDark"> <span class="grayLighter bg-grayDark"><strong>Urk!</strong> Save me, grayscale!</span></code>  </small>
+
+        </div>
+    </div>
+
+    <section id="how-to">
+        <div class="how-to row-fluid">
+            <div class="span12 well bg-white">
+                <h2 class="orange">You got this</h2>
+                <p class="lead pink">If you can use Bootstrap, you can probably guess most of it.</p>
+                <p class="lead grayDark">This came from a really simple desire that went unfulfilled. Wow, it sounds overly-deep when I put it that way.</p>
+                <p class="lead grayDark">Basically, while I was working with Bootstrap on a web application, I wanted to change the color of something, and for
+                whatever reason I assumed I could type the name of one of the colors which I had seen in the variables.less file (you may think
+                that this was some unusual feat of memory, but seriously the colors are named <em>pink </em> and <em>blue </em> after all - not very
+                hard to remember). Anyway, if you're familiar with bootstrap you probably know that I was off-base, and that you can't do that.</p>
+                <p class="lead grayDark">All you have to do is use the names of the Bootstrap primary color variables from the variables.less file in your tags - there's a handy
+                list just below, but you probably won't need it after 5 minutes.</p>
+                <div class="row-fluid">
+
+                        <dl class="span6 dl-horizontal well gray">
+                            <h3 class="pagination-centered">Grays</h3>
+                            <dt>black</dt>
+                                <dd>#000;</dd>
+                            <dt>grayDarker</dt>
+                                <dd>#222</dd>
+                            <dt>grayDark</dt>
+                                <dd>#333</dd>
+                            <dt>gray</dt>
+                                <dd>#555</dd>
+                            <dt>grayLight</dt>
+                                <dd>#999</dd>
+                            <dt>grayLighter</dt>
+                                <dd>#eee</dd>
+                            <dt>white</dt>
+                                <dd>#fff</dd>
+                            <dt>&nbsp;</dt>
+                            <dd>&nbsp;</dd>
+                        </dl>
+
+
+                    <dl class="span6 dl-horizontal well blueDark">
+                        <h3 class="pagination-centered">Colors</h3>
+
+                        <dt class="blue">blue</dt>
+                            <dd>#049cdb</dd>
+                        <dt class="blueDark">blueDark</dt>
+                            <dd>#0064cd</dd>
+                        <dt class="green">green</dt>
+                            <dd>#46a546</dd>
+                        <dt class="red">red</dt>
+                            <dd>#9d261d</dd>
+                        <dt class="yellow">yellow</dt>
+                            <dd>#ffc40d</dd>
+                        <dt class="orange">orange</dt>
+                            <dd>#f89406</dd>
+                        <dt class="pink">pink</dt>
+                            <dd>#c3325f</dd>
+                        <dt class="purple">purple</dt>
+                            <dd>#7a43b6</dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="well bg-white">
+            <h2 class="pink">Here's all of the bg-color classes in wells, because why not?</h2>
+            <div class="row pagination-centered">
+                <div class="span1 well gray bg-white pagination-centered "><small>white</small></div>
+                <div class="span1 well gray bg-grayLighter pagination-centered" ><small>grayLighter</small></div>
+                <div class="span1 well gray bg-grayLight pagination-centered" ><small>grayLight</small></div>
+                <div class="span1 well grayLighter bg-gray pagination-centered" ><small>gray</small></div>
+                <div class="span1 well grayLighter bg-gray pagination-centered" ><small>gray</small></div>
+
+                <div class="span1 well grayLighter bg-grayDark pagination-centered" ><small>grayDark</small></div>
+                <div class="span1 well grayLighter bg-grayDarker pagination-centered" ><small>grayDarker</small></div>
+                <div class="span1 well white bg-black pagination-centered" ><small>Black</small></div>
+            </div>
+            <div class="row">
+                <div class="span1 well white bg-orange pagination-centered" ><small>orange</small></div>
+                <div class="span1 well white bg-blue pagination-centered " ><small>blue</small></div>
+                <div class="span1 well white bg-blueDark pagination-centered" ><small>blueDark</small></div>
+                <div class="span1 well white bg-purple pagination-centered" ><small>purple</small></div>
+                <div class="span1 well bg-yellow pagination-centered" ><small>yellow</small></div>
+                <div class="span1 well bg-green pagination-centered" ><small>green</small></div>
+                <div class="span1 well white bg-pink pagination-centered" ><small>pink</small></div>
+                <div class="span1 well white bg-red pagination-centered" ><small>red</small></div>
+                <img  class="img-rounded">
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span12 well orange">
+                <h2 class="">Oh, you want a table...</h2>
+                <p class="lead">How about a table like this, son?</p>
+                <table class="table table-condensed table-bordered gray bg-white ">
+                    <thead>
+
+                        <tr>
+                            <th>Color Combos</th>
+                            <th class="grayLighter">white</th>
+                            <th class="grayLighter">grayLighter</th>
+                            <th class="grayLight">grayLight</th>
+                            <th class="gray">gray</th>
+                            <th class="grayDark">grayDark</th>
+                            <th class="grayDarker">grayDarker</th>
+                            <th class="black ">black</th>
+                            <th class="blue">blue</th>
+                            <th class="blueDark">blueDark</th>
+                            <th class="green">green</th>
+                            <th class="red">red</th>
+                            <th class=" yellow">yellow</th>
+                            <th class=" orange">orange</th>
+                            <th class=" pink">pink</th>
+                            <th class=" purple">purple</th>
+                        </tr>
+                    </thead>
+
+                    <tr class="bg-white">
+                        <td class="bg-white">bg-white</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-grayLighter">
+                        <td class="bg-grayLighter">bg-grayLighter</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-grayLight">
+                        <td class="bg-grayLight">bg-grayLight</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+                    <tr class="bg-gray">
+                        <td class="grayLighter bg-gray">bg-gray</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-grayDark">
+                        <td class="grayLighter bg-grayDark">bg-grayDark</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-grayDarker">
+                        <td class="grayLighter bg-grayDarker">bg-blue</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-black">
+                        <td class="grayLighter bg-black">bg-black</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-blueDark">
+                        <td class="bg-blueDark">bg-blueDark</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-green">
+                        <td class="bg-green">bg-green</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-red">
+                        <td class="bg-red">bg-red</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-yellow">
+                        <td class="bg-yellow">bg-yellow</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-orange">
+                        <td class="bg-orange">bg-orange</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-pink">
+                        <td class="bg-pink">bg-pink</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                    <tr class="bg-purple">
+                        <td class="bg-purple">bg-purple</td>
+                        <td class="white ">white</td>
+                        <td class="grayLighter">grayLighter</td>
+                        <td class="grayLight">grayLight</td>
+                        <td class="gray">gray</td>
+                        <td class="grayDark">grayDark</td>
+                        <td class="grayDarker">grayDarker</td>
+                        <td class="black ">black</td>
+                        <td class="blue">blue</td>
+                        <td class="blueDark">blueDark</td>
+                        <td class="green">green</td>
+                        <td class="red">red</td>
+                        <td class=" yellow">yellow</td>
+                        <td class=" orange">orange</td>
+                        <td class=" pink">pink</td>
+                        <td class=" purple">purple</td>
+                    </tr>
+
+                </table>
+             
+            <p class="lead pink pagination-right">Ok, lemmie stop.</p>
+            <p class="lead orange pagination-right">That table is just <em>nasty</em>.</p></div>
+            </div>
+
+    </section>
+
+    <footer class="container">
+
+        <div class="row">
+
+            <p class="lead blueDark">Note: Use of the name <cite><a href="http://en.wikipedia.org/wiki/Technicolor">Technicolor</a></cite>
+               is meant as an homage to the historical event where color </p>
+
+        </div>
+
+    </footer>
+
+
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap-transition.js"></script>
+<script src="../assets/js/bootstrap-alert.js"></script>
+<script src="../assets/js/bootstrap-modal.js"></script>
+<script src="../assets/js/bootstrap-dropdown.js"></script>
+<script src="../assets/js/bootstrap-scrollspy.js"></script>
+<script src="../assets/js/bootstrap-tab.js"></script>
+<script src="../assets/js/bootstrap-tooltip.js"></script>
+<script src="../assets/js/bootstrap-popover.js"></script>
+<script src="../assets/js/bootstrap-button.js"></script>
+<script src="../assets/js/bootstrap-collapse.js"></script>
+<script src="../assets/js/bootstrap-carousel.js"></script>
+<script src="../assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>
